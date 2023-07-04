@@ -1,0 +1,218 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  color: #444;
+  border-top: 5px solid #1098ad;
+  position: relative;
+}
+
+nav {
+  font-size: 18px;
+}
+
+nav a:link {
+  display: inline-block;
+  margin-right: 30px;
+  margin-top: 10px;
+}
+
+nav a:link:last-child {
+  margin-right: 0;
+}
+
+article {
+  margin-bottom: 60px;
+}
+
+h1,
+h4 {
+  text-transform: uppercase;
+}
+h1,
+h2,
+h3 {
+  color: #1098ad;
+}
+
+h1 {
+  font-size: 26px;
+  font-style: italic;
+}
+
+h2 {
+  font-size: 40px;
+  margin-bottom: 30px;
+  position: relative;
+}
+
+h2::after {
+  content: "TOP";
+  background-color: #ffe70e;
+  color: #444;
+  font-size: 16px;
+  font-weight: bold;
+  display: inline-block;
+  padding: 10px;
+  position: absolute;
+  top: -10px;
+  right: -10px;
+}
+
+h3 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+/*
+psuedo classes:
+
+we define a psuedo class with 2 semicolons as opposed to 1 semicolon in pusedo classes.
+
+the below example can be read as for each h3 element, change the text color of the first line of the p element to red
+
+h1::first-letter {
+  font-style: normal;
+  margin-right: 5px;
+}
+
+h3 + p::first-line {
+  color: red;
+}
+
+p::first-line {
+  color: red;
+}
+
+*/
+
+/* text-align centers in parent element */
+
+h4 {
+  font-size: 20px;
+  text-align: center;
+}
+
+/* line-height: space between lines in text elements*/
+
+p {
+  font-size: 22px;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+ul,
+ol {
+  margin-left: 50px;
+  margin-bottom: 20px;
+}
+
+li {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+li:last-child {
+  margin-bottom: 0;
+}
+
+/* Psuedo classes */
+
+/* li:first-child {
+  font-weight: bold;
+}
+
+li:last-child {
+  font-style: italic;
+}
+
+li:nth-child(odd) {
+  text-decoration: underline;
+} 
+*/
+
+/*  These are styled in this order: Link, Visited, Hover, Active */
+
+a:link {
+  color: #1098ad;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #1098ad;
+}
+
+a:hover {
+  font-weight: bold;
+  text-decoration: underline dotted orangered;
+}
+
+a:active {
+  background-color: black;
+  font-style: italic;
+}
+
+#related-list-container {
+  list-style: none;
+}
+
+#author {
+  font-style: italic;
+  font-size: 18px;
+}
+
+#copyright {
+  font-size: 16px;
+}
+
+.content-container {
+  width: 700px;
+  margin: 0 auto;
+}
+
+.main-header {
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+  margin-bottom: 60px;
+  height: 80px;
+}
+
+.article-header {
+  margin-bottom: 40px;
+}
+
+.post-img {
+  height: auto;
+  width: 100%;
+}
+
+.ul-container {
+  background-color: #f7f7f7;
+  border-top: 5px solid #1098ad;
+  border-bottom: 5px solid #1098ad;
+  padding: 50px 0;
+  width: 500px;
+}
+
+.related-author {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/* by default, element is positioned in relation to viewport */
+/* Need to explicity put position relative on parent to position within parent and not viewport  */
+.like-btn {
+  font-size: 22px;
+  padding: 20px;
+  cursor: pointer;
+
+  position: absolute;
+  bottom: 50px;
+  right: 30px;
+}
+/* .related-list {
+  list-style: none;
+} */
